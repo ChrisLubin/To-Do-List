@@ -1,0 +1,198 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(../IMG/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  background: black;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #279eaa;
+  height: 62%;
+  margin: auto;
+  width: 51%;
+  border: 4px solid black;
+  color: white;
+  border-radius: 4%;
+  z-index: 1;
+  font-family: serif;
+}
+
+#title {
+  text-align: center;
+  border-bottom: 4px solid black;
+  height: auto;
+}
+
+#tasks {
+  min-height: 62%;
+  max-height: 62%;
+  overflow-y: auto;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-top: none;
+}
+
+#tasks ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#tasks ul li:first-child {
+  margin-top: -3%;
+  padding-left: 2%;
+}
+
+#tasks ul li {
+  line-height: 22px;
+  padding-top: 2.6%;
+  padding-bottom: 2.6%;
+  font-size: 25px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 0px auto;
+  padding-left: 2%;
+  margin-top: -2px;
+}
+
+#tasks ul li span input {
+  line-height: 19px;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+#tasks ul li:last-child {
+  border-bottom: 2px solid black;
+}
+
+.edit {
+  height: 22px;
+  margin: 0 auto;
+  float: right;
+  margin-right: 4%;
+}
+
+.delete {
+  height: 22px;
+  position: relative;
+  margin: 0 auto;
+  float: right;
+  margin-right: 2%;
+}
+
+.clear {
+  clear: both;
+}
+
+#foot {
+  height: 100%;
+  width: 100%;
+}
+
+#ui {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#ui input {
+  padding: 1%;
+  margin: 0 auto;
+  width: 30%;
+  font-size: 15px;
+  margin-top: 3.7%;
+}
+
+.inputError::placeholder {
+  color: red;
+}
+
+.inputError::-webkit-input-placeholder {
+  color: red;
+}
+
+.inputError::-moz-input-placeholder {
+  color: red;
+}
+
+.inputError::-o-input-placeholder {
+  color: red;
+}
+
+.inputError::-ms-input-placeholder {
+  color: red;
+}
+
+#ui button {
+  margin-left: 4%;
+}
+
+#confirmBox {
+  display: none;
+  z-index: 3;
+  opacity: 0;
+  position: absolute;
+  height: 15%;
+  width: 25%;
+  background: #c23333;
+  color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 4%;
+}
+
+.selectedDelete {
+  background-color: #c42828;
+}
+
+#confirmBox button {
+  margin-top: 7%;
+}
+
+#yes {
+  margin-right: 3%;
+}
+
+#no {
+  margin-left: 3%;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1%;
+  font-size: 12px;
+}
